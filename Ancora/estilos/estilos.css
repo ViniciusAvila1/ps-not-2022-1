@@ -1,0 +1,49 @@
+#corpo {
+    margin: 5px;
+}
+
+#logoFatec{
+    top: 0px;
+    opacity: 1.0;
+    filter: alpha(opacity=50);
+}
+
+#logoFatec:hover{
+    opacity: 0.1;
+    filter: alpha(opacity=100);
+}
+
+.menuOpcoes ul li{
+    display: inline;
+}
+
+#menu{
+    background-color: red;
+}
+
+#menu ul{
+    padding: 23px;
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{ /* palavras do menu, tamanho e espaçamento */
+    padding: 2px 10px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{ /* efeito ao passar o mouse em cima */
+
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+
+}
+

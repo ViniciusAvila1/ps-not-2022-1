@@ -1,0 +1,49 @@
+#spursGym{
+    background-color: gainsboro;
+}
+
+#tituloSecao{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#ginasio{
+    height: 250px;
+    width: 400px;
+}
+
+#spursTitles{
+    background-color: gainsboro;
+}
+
+#titulosSpurs{
+    height: 300px;
+    width: 350px;
+}
+
+#spursPlayers{
+    background-color: gainsboro;
+}
+
+#jogadoresSpurs{
+    height: 250px;
+    width: 400px;
+}
+
+#rocketsGym{
+    background-color: lightcoral;
+}
+
+#titulosRockets{
+    height: 300px;
+    width: 450px;
+}
+
+#rocketsTitles{
+    background-color: lightcoral;
+}
+
+#rocketsPlayers{
+    background-color: lightcoral;
+}

@@ -1,0 +1,38 @@
+#corpo {
+    margin: 5px;
+}
+
+.menuOpcoes ul li{
+    display: inline;
+}
+
+#menu{
+    background-color: red;
+}
+
+#menu ul{
+    padding: 23px;
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{ /* palavras do menu, tamanho e espaçamento */
+    padding: 2px 10px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{ /* efeito ao passar o mouse em cima */
+
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+
+}
+

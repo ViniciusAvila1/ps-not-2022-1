@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Grid Bootstrap</title>
+</head>
+
+<body>
+    <h4>Grid com Bootstrap</h4>
+
+    <div class="container">
+        <!-- primeira linha -->
+    
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label> Email </label>
+                <input type="email" class="form-control" id="inputEmail6" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label> Senha </label>
+                <input type="password" class="form-control" id="inputEmail6" placeholder="Senha">
+            </div>
+        </div>
+
+        <!-- segunda linha -->
+
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label> Cidade </label>
+                <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+            </div>
+            <div class="form-group col-md-3 offset-md-1">
+                <label> Estado </label>
+                <select class="form-control" id="estado"> 
+                    <option> São Paulo </option>
+                    <option> Minas Gerais </option>
+                    <option> Rio de Janeiro </option>
+                    <option> Bahia </option>
+                    <option> Goiás </option>
+                    <option> Sergipe </option>
+                </select>
+            </div>
+            <div class="form-group col-md-1 ">
+                <label> UF </label>
+                <input type="text" class="form-control" id="uf" placeholder="UF">
+            </div>
+            <div class="form-group col-md-2">
+                <label> CEP </label>
+                <input type="text" class="form-control" id="cep" placeholder="CEP">
+                
+            </div>
+        </div>
+
+        <!-- terceira linha -->
+
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label> Nome do Aluno </label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+            </div>
+            <div class="form-group col-md-2">
+                <label> Apelido </label>
+                <input type="text" class="form-control" id="apelido" placeholder="Apelido">
+            </div>
+            <div class="form-group col-md-1">
+                <label> Idade </label>
+                <input type="number" class="form-control" id="idade" placeholder="Idade">
+            </div>
+            <div class="form-group col-md-1 offset-md-1">
+                <label> Ativo/Inativo </label>
+                <input type="text" class="form-control" id="ativo" placeholder="A/I">
+            </div>
+            <div class="form-group col-md-2 offset-md-0">
+                <label> Data de Nascimento </label>
+                <input type="date" class="form-control" id="data" placeholder="Data de Nascimento">
+            </div>
+        </div>
+
+        <!-- Quarta linha -->
+
+        <div class="form-row">
+            <div class="form-group col-md-5">
+                <label> Idiomas: </label>
+                <input type="checkbox" id="idiomas" value="ingles"> Inglês
+                <input type="checkbox" id="idiomas" value="espanhol"> Espanhol
+                <input type="checkbox" id="idiomas" value="frances"> Francês
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexoRadio" id="sexo">
+                <label class="form-check-label">
+                    Masculino
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexoRadio" id="sexo">
+                <label class="form-check-label">
+                    Feminino
+                </label>
+            </div>
+        </div>
+
+        <!-- Botão -->
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="checkbox" checked autocomplete="off"> Entrar
+            </label>
+        </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

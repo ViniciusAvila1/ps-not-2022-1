@@ -1,0 +1,62 @@
+#menu{
+    background-color: rgb(28, 28, 201);
+}
+
+#menu ul{
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{ /* palavras do menu, tamanho e espaçamento */
+    padding: 10px;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul li a:hover{ /* efeito ao passar o mouse em cima */
+
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+}
+
+#nbaLogo{
+    position: absolute;
+    right: 35px;
+    top: 25px;
+    height: 100px;
+    width: 300px;
+}
+
+#rocketsLogo{
+    height: 250px;
+    width: 250px;
+}
+
+#spursLogo{
+    height: 250px;
+    width: 250px;
+}
+
+#feedback{
+    font-size: 35px;
+    text-decoration: underline;
+    border: 3px dashed black;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(28, 28, 201);
+    height: 10vh;
+    border: 1px solid black;
+    color: white;
+    font-size: 20px;
+}

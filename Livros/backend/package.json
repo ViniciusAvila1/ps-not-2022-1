@@ -1,0 +1,23 @@
+{
+  "name": "refatorando",
+  "version": "1.0.0",
+  "description": "acesso a banco de dados MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node app"
+  },
+  "author": "Neto",
+  "license": "ISC",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "package": "^1.0.1"
+  }
+}
