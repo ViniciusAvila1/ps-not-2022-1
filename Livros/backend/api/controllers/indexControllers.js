@@ -3,8 +3,11 @@ module.exports = {
 }
 
 function index(req, res) {
-    res.json('Rota raiz encontrada!')
-    console.log('Rota raiz encontrada!')
+    res.json('Rota Raiz Encontrada!')
+    console.log('Rota Raiz Encontrada!')
+    
 }
+
+
 
    

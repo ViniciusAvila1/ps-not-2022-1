@@ -1,25 +1,22 @@
-    <%- include ('parcial/header.ejs') ;%>
+<%- include ('parcial/header.ejs') ;%>
 
-    <header>
+        <header>
+                <nav class="menuPrincipal">
+                        <ul>
+                                <li> <a href="/noticias/noticiasMenu">Notícias</a> </li>
+                                <li> <a href="/receitas/receitasMenu">Receitas</a> </li>
+                                <li> <a href="/lazer/lazerMenu">Lazer</a> </li>
+                                <li> <a href="/Classificados/classificadosMenu">Classificados</a> </li>
+                                <li> <a href="#">Eletrônicos</a> </li>
+                                <li> <a href="#">Contato</a> </li>
+                        </ul>
+                </nav>
+        </header>
 
-            <nav class="menuPrincipal">
-                    <ul>
-                        <li> <a href="/noticias/noticiasMenu">Notícias</a></li>
-                        <li> <a href="/receitas/receitasMenu">Receitas</a></li>
-                        <li> <a href="/lazer/lazerMenu">Lazer</a></li>
-                        <li> <a href="/classificados/classificadosMenu">Classificados</a></li>
-                        <li> <a href="#">Eletrônicos</a></li>
-                        <li> <a href="#">Contato</a></li>
-                    </ul>
-            </nav>
+        <div id='corpo'>
 
-    </header>
+                <%= titulo %>
 
-    <div id='corpo'>
+        </div>
 
-            <%= titulo %>
-
-    </div>
-
-    <%- include ('parcial/footer.ejs') ;%>
-
+        <%- include ('parcial/footer.ejs') ;%>

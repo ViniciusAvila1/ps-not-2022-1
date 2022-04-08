@@ -1,25 +1,26 @@
-    <%- include ('../parcial/header.ejs') ;%>
+<%- include ('../parcial/header.ejs') ;%>
 
-    <header>
+        <header>
+                <nav class="menuPrincipal">
+                        <ul>
+                                <li> <a href="/">Inicio</a> </li>
+                                <li> <a href="/noticias/noticiasEsporteMenu">Esporte</a> </li>
+                                <li> <a href="#">Economia</a> </li>
+                                <li> <a href="#">Saúde</a> </li>
+                                <li> <a href="#">Meio Ambiente</a> </li>
+                                <li> <a href="#">Internacional</a> </li>
+                        </ul>
+                </nav>
+        </header>
 
-            <nav class="menuPrincipal">
-                    <ul>
-                            <li> <a href="/">Início</a></li>
-                            <li> <a href="/noticias/noticiasEsporteMenu">Esporte</a></li>
-                            <li> <a href="#">Economia</a></li>
-                            <li> <a href="#">Saúde</a></li>
-                            <li> <a href="#">Meio Ambiente</a></li>
-                            <li> <a href="#">Internacional</a></li>
-                    </ul>
-            </nav>
+        <div id='corpo'>
 
-    </header>
+                <%= titulo %>
 
-    <div id='corpo'>
+                <div class="img_menu">
+                        <img src="/imagens/noticias/noticias.jpg" alt="Notícias">
+                </div>
 
-            <%= titulo %>
+        </div>
 
-    </div>
-
-    <%- include ('../parcial/footer.ejs') ;%>
-
+        <%- include ('../parcial/footer.ejs') ;%>
