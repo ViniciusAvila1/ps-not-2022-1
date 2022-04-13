@@ -1,0 +1,72 @@
+html, 
+body {
+    width: 100;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color:gray;
+    height: 15vh;
+    border: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+#corpo {
+    background-color:darksalmon;
+    height: 75vh;
+    text-align: center;
+    border: 0px solid black;
+    font-size: 42px;
+
+}
+
+footer {
+    background-color: grey;
+    height: 10vh;
+    border: 1px solid black;
+    font-size: 42px;
+    text-align: center;
+}
+
+.menuPrincipal ul li {
+    display: inline;
+    padding-left: 22px;
+}
+
+
+li:before{
+    content: " | ";
+    color: black;
+    font-size: 50px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+li:first-child::before{
+    content: none;
+}
+
+.menuPrincipal ul li#recordSection a{
+    color:green !important;
+}
+
+.menuPrincipal ul li#culturaSection a{
+    color: pink !important;
+}
+
+.menuPrincipal ul li#bandSection a{
+    color:lightblue !important;
+}
+
+.menuPrincipal ul li#globoSection a{
+    color: yellow !important;
+}
+
+.menuPrincipal ul li#sbtSection a{
+    color: white !important;
+}
