@@ -90,7 +90,7 @@ function livrosAi(req, res) {
             } else {
                 p_ativo = "A"
             }
-            console.log("A/I: "+p_ativo)
+            console.log("A/I: "+ p_ativo)
             models.aiLivros(id, p_ativo, function(err, result){
                 if(err){
                     throw err
