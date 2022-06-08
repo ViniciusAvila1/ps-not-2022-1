@@ -1,34 +1,34 @@
-const Produtos = require('../models/produtosModels')
+const Candidatos = require('../models/candidatosModels')
 
 module.exports = {
     async store(req, res) {
-        const produto = await Produtos.create(req.body)
-        return res.json(produto)
+        const candidato = await Candidatos.create(req.body)
+        return res.json(candidato)
     },
 
     async index(req, res) {
-        const produtos = await Produtos.findAll();
-        return res.json(produtos)
+        const candidatos = await Candidatos.findAll();
+        return res.json(candidatos)
     },
 
     async indexId(req, res) {
         const { codigo_id } = req.params
         console.log('Parâmetro esperado ' + codigo_id)
 
-        const produto = await Produtos.findByPk(codigo_id)
-        return res.json(produto)
+        const candidato = await Candidatos.findByPk(codigo_id)
+        return res.json(candidato)
     },
 
     async update(req, res) {
         const { codigo_id } = req.params
-        const { pro_descricao, pro_vlrcusto, pro_vlrvenda, pro_ativoinativo } = req.body
+        const { can_nome, can_apelido, can_sexo, can_partido } = req.body
         console.log('Parâmetro esperado ' + codigo_id)
 
-        await Produtos.update({
-            pro_descricao,
-            pro_vlrcusto,
-            pro_vlrvenda,
-            pro_ativoinativo
+        await Candidatos.update({
+            can_nome,
+            can_apelido,
+            can_sexo,
+            can_partido
         }, {
             where: { id: codigo_id}
         })
@@ -40,7 +40,7 @@ module.exports = {
         const { codigo_id } = req.params
         console.log('Parâmetro esperado ' + codigo_id)
 
-        await Produtos.destroy({
+        await Candidatos.destroy({
             where: {
                 id: codigo_id
             }
