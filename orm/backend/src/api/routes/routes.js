@@ -6,6 +6,7 @@ const controllersCategorias = require('../controllers/categoriasControllers')
 const controllersDepartamentos = require('../controllers/departamentosControllers')
 const controllersCidades = require('../controllers/cidadesControllers')
 const controllersCursos = require('../controllers/cursosControllers')
+const controllersProdutos = require('../controllers/produtosControllers')
 
 // rota raiz
 routes.get('/', controllers.indexRaiz)
@@ -37,5 +38,12 @@ routes.get('/cursos', controllersCursos.index)
 routes.get('/cursos/:codigo_id', controllersCursos.indexId)
 routes.put('/cursos/:codigo_id', controllersCursos.update)
 routes.delete('/cursos/:codigo_id', controllersCursos.delete)
+
+// rotas de produtos
+routes.post('/produtos', controllersProdutos.store)
+routes.get('/produtos', controllersProdutos.index)
+routes.get('/produtos/:codigo_id', controllersProdutos.indexId)
+routes.put('/produtos/:codigo_id', controllersProdutos.update)
+routes.delete('/produtos/:codigo_id', controllersProdutos.delete)
 
 module.exports = routes
