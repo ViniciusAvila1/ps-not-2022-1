@@ -7,7 +7,7 @@ const cidades = require('../api/models/cidadesModels')
 const cursos = require('../api/models/cursosModels')
 const produtos = require('../api/models/produtosModels')
 const candidatos = require('../api/models/candidatosModels')
-// const telefones = require('../api/models/telefonesModels')
+const telefones = require('../api/models/telefonesModels')
 
 const conexao = new Sequelize(dbConfig)
 
@@ -24,7 +24,7 @@ cidades.init(conexao)
 cursos.init(conexao)
 produtos.init(conexao)
 candidatos.init(conexao)
-// telefones.init(conexao)
+telefones.init(conexao)
 
 
 module.exports = conexao;
