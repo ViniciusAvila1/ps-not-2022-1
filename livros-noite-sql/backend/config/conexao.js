@@ -4,7 +4,7 @@ const database = 'dados221n'
 const conexao = mysql.createConnection({
     user: 'root',
     password: 'ViniciusLima27',
-    host: '127.0.0.1',
+    host: 'localhost',
     port: 3306
 })
 
