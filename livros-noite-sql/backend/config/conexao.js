@@ -15,7 +15,7 @@ conexao.connect((err) => {
     }
 
     conexao.query('USE ' + database)
-    console.log('\nConexão MySQL estabilizada com sucesso!!')
+    console.log('\nConexão MySQL estabilizada com sucesso!')
 })
 
 module.exports = conexao;
