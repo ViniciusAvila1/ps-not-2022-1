@@ -19,4 +19,3 @@ conexao.connect((err) => {
 })
 
 module.exports = conexao;
-
