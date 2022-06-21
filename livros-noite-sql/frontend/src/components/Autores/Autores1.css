@@ -1,0 +1,95 @@
+.autores {
+  text-align: center;
+  height: 20vh;
+}
+
+legend {
+  width: 100vw;
+}
+
+table {
+  width: 10vw;
+}
+
+#titulo {
+  border: 0.5vh;
+  background-color: darkgrey;
+  padding-top: 0.5vh;
+}
+
+#t_codigo {
+  width: 1vw;
+}
+
+#t_ativo {
+  width: 1vw;
+}
+
+#t_nome {
+  width: 10vw;
+}
+
+#t_apelido {
+  width: 10vw;
+}
+
+#t_sexo {
+  width: 1vw;
+}
+
+#t_telefone {
+  width: 10vw;
+}
+
+#t_email {
+  width: 10vw;
+}
+
+tbody > tr {
+  height: 0.2vh;
+  border: 0.1vh;
+}
+
+
+
+#p_codigo {
+  width: 1vw;
+  text-align: center;
+  padding-right: 0.5vw;
+}
+
+#p_ativo {
+  width: 1vw;
+  padding-left: 0.5vw;
+  text-align: center;
+}
+
+
+#p_nome {
+  width: 10vw;
+  padding-right: 0.2vw;
+  text-align: center;
+}
+
+#p_apelido {
+  width: 10vw;
+}
+
+#p_sexo {
+  width: 1vw;
+}
+
+#p_telefone {
+  width: 10vw;
+}
+
+#p_email {
+  width: 10vw;
+  padding-left: 1vw;
+  text-align: center;
+}
+
+#button-save-marca{
+  background-color: darkblue;
+  text-decoration: lightpink;
+}
