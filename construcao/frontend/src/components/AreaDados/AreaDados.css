@@ -1,0 +1,13 @@
+.areaDados {
+  height: 72vh;
+  border: 0.3vh solid blue;
+  margin: 0.2vh 0.2vh 0.2vh 0.2vh;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+#texto {
+  font-size: 12vh;
+  text-align: center;
+  padding-top: 20vh;
+}

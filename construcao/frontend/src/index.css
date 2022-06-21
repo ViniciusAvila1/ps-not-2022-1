@@ -1,0 +1,13 @@
+/* lihas pares */
+.tabela tbody tr:nth-child(even) {
+  background-color: #CCC;
+}
+
+/* lihas ímpares */
+.tabela tbody tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+.tabela tbody tr:hover {
+  background-color: rgba(221, 221, 221, 0.849);
+}

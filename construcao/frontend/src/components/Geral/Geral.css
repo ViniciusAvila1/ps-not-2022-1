@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.geral{
+  height: 99vh;
+  border: 0.2vh solid salmon;
+  margin: 0.2vh;
+  background-color: lightblue;
+}
