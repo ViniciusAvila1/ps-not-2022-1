@@ -1,18 +1,18 @@
-const models = require('../models/autoresModels.js')
+const models = require('../models/engenheirosModels.js')
 
 module.exports = {
-    autoresGetAll,
-    autoresGetById,
-    autoresAi,
-    autoresDelete,
-    autoresUpdate,
-    autoresNovo
+    engenheirosGetAll,
+    engenheirosGetById,
+    engenheirosAi,
+    engenheirosDelete,
+    engenheirosUpdate,
+    engenheirosNovo
 }
 
-function autoresGetAll(req, res) {
-    console.log('Listar Autores { MODEL }')
-    models.getAllAutores(function (err, resposta) {
-        console.log('Retorno de Autores { M O D E L }', resposta)
+function engenheirosGetAll(req, res) {
+    console.log('Listar Engenheiros { MODEL }')
+    models.getAllEngenheiros(function (err, resposta) {
+        console.log('Retorno de Engenheiros { M O D E L }', resposta)
         if(err) {
             throw err
         } else {
@@ -22,11 +22,11 @@ function autoresGetAll(req, res) {
 
 }
 
-function autoresGetById(req, res) {
-    console.log('Consultar Autores { MODEL }')
+function engenheirosGetById(req, res) {
+    console.log('Consultar Engenheiros { MODEL }')
     const id = req.params.codigo
-    models.getByIdAutores(id, function (err, resposta) {
-        console.log('Retorno Consulta Autores { M O D E L }', resposta)
+    models.getByIdEngenheiros(id, function (err, resposta) {
+        console.log('Retorno Consulta Engenheiros { M O D E L }', resposta)
         if(err) {
             throw err
         } else {
@@ -36,15 +36,15 @@ function autoresGetById(req, res) {
 }
 
 
-function autoresAi(req, res) {
+function engenheirosAi(req, res) {
     const id = req.params.codigo
     let p_ativo = ""
-    console.log('Ativar/Inativar Autores { MODEL } ' + id)
+    console.log('Ativar/Inativar Engenheiros { MODEL } ' + id)
 
-    models.getByIdAutores(id, function (err, resposta) {
-        console.log('Retorno Consulta Autores A/I { M O D E L }', resposta[0].aut_nome)
-        console.log("Registro A/I: "+resposta[0].aut_ativoinativo)
-        p_ativo = resposta[0].aut_ativoinativo
+    models.getByIdEngenheiros(id, function (err, resposta) {
+        console.log('Retorno Consulta Engenheiros A/I { M O D E L }', resposta[0].eng_nome)
+        console.log("Registro A/I: "+resposta[0].eng_ativoinativo)
+        p_ativo = resposta[0].eng_ativoinativo
         if(err) {
             throw err
         } else {
@@ -53,8 +53,8 @@ function autoresAi(req, res) {
             } else {
                 p_ativo = "A"
             }
-            console.log("Registro A/I: "+p_ativo)
-            models.aiAutores(id, p_ativo, function(err, result){
+            console.log("Registro A/I: "+ p_ativo)
+            models.aiEngenheiros(id, p_ativo, function(err, result){
                 if(err){
                     throw err
                 }else {
@@ -67,11 +67,11 @@ function autoresAi(req, res) {
 
 }
 
-function autoresDelete(req, res) {
+function engenheirosDelete(req, res) {
     const id = req.params.codigo
-    console.log('Deletar Autores { MODEL } '+id)
-    models.deleteAutores(id, function (err, resposta) {
-        console.log('Retorno Delete Autores { M O D E L }', resposta)
+    console.log('Deletar Engenheiros { MODEL } '+ id)
+    models.deleteEngenheiros(id, function (err, resposta) {
+        console.log('Retorno Delete Engenheiros { M O D E L }', resposta)
         if(err) {
             throw err
         } else {
@@ -80,14 +80,14 @@ function autoresDelete(req, res) {
     }) 
 }
 
-function autoresUpdate(req, res) {
+function engenheirosUpdate(req, res) {
     const id = req.params.codigo
     const dados = req.body;
-    console.log('Atualização de Autores { MODEL } '+id)
+    console.log('Atualização de Engenheiros { MODEL } '+id)
     console.log(dados)
 
-    models.updateAutores(id, dados, function (err, resposta) {
-        console.log('Retorno Atualização de Autores { M O D E L }', resposta)
+    models.updateEngenheiros(id, dados, function (err, resposta) {
+        console.log('Retorno Atualização de Engenheiros { M O D E L }', resposta)
         if(err) {
             throw err
         } else {
@@ -96,19 +96,19 @@ function autoresUpdate(req, res) {
     }) 
 }
 
-function autoresNovo(req, res) {
+function engenheirosNovo(req, res) {
     // body recebe o que estiver nos inputs
     var dados = req.body;
-    console.log("Gravando novo registro de autores...");
+    console.log("Gravando novo registro de engenheiros...");
     console.log(req.body)
     // como a chave primária não altera, fica null
-    dados.aut_codigo = null
-    console.log("Inserindo novo registro de autores...")
-    models.novoAutor(dados, function(err, result) {
+    dados.eng_codigo = null
+    console.log("Inserindo novo registro de engenheiros...")
+    models.novoEngenheiro(dados, function(err, result) {
         if (err) {
             throw err
         }
         res.status(201)
-        res.redirect('/autores')
+        res.redirect('/engenheiros')
     })
 }

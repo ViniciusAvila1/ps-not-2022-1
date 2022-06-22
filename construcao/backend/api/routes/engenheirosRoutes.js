@@ -1,13 +1,13 @@
-const controllers = require('../controllers/autoresControllers.js')
+const controllers = require('../controllers/engenheirosControllers.js')
 
-server.get('/autores', controllers.autoresGetAll)
+server.get('/engenheiros', controllers.engenheirosGetAll)
 
-server.get('/autores/:codigo', controllers.autoresGetById)
+server.get('/engenheiros/:codigo', controllers.engenheirosGetById)
 
-server.get('/autores/ai/:codigo', controllers.autoresAi)
+server.get('/engenheiros/ai/:codigo', controllers.engenheirosAi)
 
-server.delete('/autores/:codigo', controllers.autoresDelete)
+server.delete('/engenheiros/:codigo', controllers.engenheirosDelete)
 
-server.put('/autores/:codigo', controllers.autoresUpdate)
+server.put('/engenheiros/:codigo', controllers.engenheirosUpdate)
 
-server.post('/autores', controllers.autoresNovo)
+server.post('/engenheiros', controllers.engenheirosNovo)
